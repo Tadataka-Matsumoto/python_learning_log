@@ -1,0 +1,17 @@
+#p276の内容を記載
+ll_env/
+__pycache__/
+*.sqlite3
+
+
+#実のp293を参照すると
+# __pycache__/
+
+# ここを参考にしたけどわからん。。。https://qiita.com/connecrew-sugiyama/items/ce5beafce9201736c39e
+# *.pyc
+# *~
+# __pycache__
+# myvenv
+# db.sqlite3
+# /static
+# .DS_Store
