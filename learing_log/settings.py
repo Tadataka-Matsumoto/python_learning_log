@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ydj_c8sz83)1wz^t&b$3amkzzgxxgsffekllohotv!m%ot&2ae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True#p282によりオフにしてみる,Trueに変えてみる
+# DEBUG = True#p282によりオフにしてみる,Trueに変えてみる
+DEBUG = True#p282でさんざん悩み、最終的にFALSEになるあくまでもlocal環境に影響(p286)
 
 ALLOWED_HOSTS = []
 
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'learing_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templetes')],#エラーメッセージ追加のため追加(p285)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
