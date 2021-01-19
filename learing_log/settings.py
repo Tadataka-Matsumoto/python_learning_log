@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ydj_c8sz83)1wz^t&b$3amkzzgxxgsffekllohotv!m%ot&2ae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True#p282によりオフにしてみる
+DEBUG = True#p282によりオフにしてみる,Trueに変えてみる
 
 ALLOWED_HOSTS = []
 
